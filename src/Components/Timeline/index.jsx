@@ -5,7 +5,7 @@ const TimeLine = () => {
 
     return (
         <>
-            <h1>Time Line</h1>
+            <h1>Time Line </h1>
         </>
     )
 }

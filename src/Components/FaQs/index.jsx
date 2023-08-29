@@ -1,11 +1,11 @@
 
-
+import "./faqs.css"
 
 const FaQs = () => {
 
     return (
         <>
-            <h1>FaQs</h1>
+            <h1>FaQs 5</h1>
         </>
     )
 }
