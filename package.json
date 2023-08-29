@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint --fix --ext .ts,.tsx .",
+    "build": "vite build",
+    "lint": "eslint --fix --ext .js,.jsx .",
     "preview": "vite preview",
     "format": "prettier --write .",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{ts,tsx}": [
       "yarn format",
       "yarn lint"
     ]
