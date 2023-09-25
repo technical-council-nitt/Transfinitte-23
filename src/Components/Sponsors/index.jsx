@@ -5,7 +5,10 @@ const Sponsors = () => {
 
     return (
         <>
-            <h1>Sponsors</h1>
+        <section id="sponsors">
+        <h1>Sponsors</h1>
+
+        </section>
         </>
     )
 }

@@ -1,11 +1,11 @@
 
-import { Header,Landing,AboutUs,Judges,TimeLine,Sponsors,FaQs,Contact } from "../../Components";
+import { NavBar,Landing,AboutUs,Judges,TimeLine,Sponsors,FaQs,Contact } from "../../Components";
 
 const Home = () => {
 
     return (
         <>
-            <Header />
+            <NavBar />
             <Landing />
             <AboutUs />
             <Judges />
