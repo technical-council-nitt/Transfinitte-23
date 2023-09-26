@@ -1,0 +1,32 @@
+
+
+.imageHolder{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.imageHolder img{
+    /* border: 1px solid white; */
+    padding: 1rem;
+    width: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #f5bffb;
+    border-radius: 0.5rem;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .imageHolder img{
+        /* border: 1px solid white; */
+        padding: 1rem;
+        width: 2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #f5bffb;
+        border-radius: 0.5rem;
+    }
+  }

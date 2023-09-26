@@ -9,7 +9,7 @@ const Home = () => {
             <Landing />
             <AboutUs />
             <Judges />
-            <TimeLine />
+            {/* <TimeLine /> */}
             <Sponsors />
             <FaQs />
             <Contact />

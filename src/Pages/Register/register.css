@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=JetBrains+Mono:wght@300&family=Montserrat:wght@300&family=PT+Sans:wght@700&family=Roboto+Mono:wght@300&family=Syne:wght@700&display=swap");
+
+body {
+  background: linear-gradient(180deg, #0b0221 0%, #0b0121 100%);
+  color: #fff;
+  font-family: Inter;
+
+  margin-top: 20px;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ececec;
+  font-family: Montserrat;
+
+  text-align: center;
+  font-size: 48px;
+}
+
+form {
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0px 0px 2px rgba(255,255,255,0.5);
+
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+  border: 1px solid #f5bffb;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(14.199999809265137px);
+  /* color: #fff; */
+  font-size: 16px;
+  color: white;
+}
+
+select {
+    width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+  border: 1px solid #f5bffb;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(14.199999809265137px);
+  /* color: #fff; */
+  font-size: 16px;
+  color: #980eaa;
+}
+
+.members-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.members-list li {
+  width: 90%;
+  background-color: #333;
+  color: #f5bffb;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.members-list button {
+  background-color: #70157a;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.memberInput {
+  width: 95%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.memberInput input {
+  width: 42%;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.btnreg {
+  background-color: #7d4e83;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  margin-bottom: 2rem;
+}
+
+.btnreg:hover {
+  background-color: #b274ba;
+}

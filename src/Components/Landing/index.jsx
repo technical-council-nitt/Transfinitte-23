@@ -1,6 +1,8 @@
 import { BackgroundImage, Center, Text, Box } from '@mantine/core';
 import LandingBg from "../../../public/assets/LandingBg.svg";
 import "./landing.css";
+import {motion} from "framer-motion";
+
 
 import { useState, useEffect } from 'react';
 
@@ -37,15 +39,15 @@ const Landing = () => {
             <div className='container'>
             <div className="content">
       <div className="smallContainer">
-        <h3>27-29th OCTOBER</h3>
+        <motion.h3 initial={{opacity : 0, y : "-100%"}} animate ={{opacity : 1, y : 0}} transition={{duration : 1.5, delay : 1}} drag dragConstraints = {{left : 0, right : 0, top : 0, bottom : 0}} dragElastic = {1}>27-29th OCTOBER</motion.h3>
         <h1>TRANSFINITTE</h1>
         <h2>Innovation Knows No Bounds</h2>
         <div className="buttonHolder">
-          <button id="regbtn">REGISTER NOW</button>
+          <button id="regbtn" onClick={() => {window.location.href = "/register"}}>REGISTER NOW</button>
           <button id="archbtn">2022 ARCHIVE</button>
         </div>
       </div>
-      <div className="timer">
+      <motion.div className="timer" initial={{opacity : 0, transform : "scale(0.1)"}} animate ={{opacity : 1, transform : "scale(1)"}} transition={{duration : 1, delay : 1}}>
         <div className="element">
           <div className="time">{days}</div>
           <div className="timeText">DAYS</div>
@@ -62,7 +64,7 @@ const Landing = () => {
           <div className="time">{seconds}</div>
           <div className="timeText">SECONDS</div>
         </div>
-      </div>
+      </motion.div>
     </div>
             </div>
             </BackgroundImage>

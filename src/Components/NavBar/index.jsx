@@ -1,4 +1,5 @@
 import { Text } from "@mantine/core";
+import logo from "../../assets/logo.svg";
 import {
 	Burger,
 	Container,
@@ -10,6 +11,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { useState } from "react";
+import {motion} from "framer-motion";
 import { useNavigate } from "react-router";
 
 const HEADER_HEIGHT = "3.5rem";
@@ -92,7 +94,8 @@ const NavBar = () => {
 	const links = [{'label' : "About US", url : "#aboutus"},
 	{'label' : "Contact", url : "#contact"},
 	{'label' : "Sponsors", url : "#sponsors"},
-	{'label' : "Timeline", url : "#timeline"}];
+	{'label' : "Timeline", url : "#timeline"},
+	{'label' : "FaQs", url : "#faqs"}];
 
 	const [opened, { toggle, close }] = useDisclosure(false);
 	const [active, setActive] = useState(links[0].link);
@@ -123,7 +126,7 @@ const NavBar = () => {
 						},
 					})}
 				>
-					{"TRANSFINITTE"}
+					<motion.img src={logo} drag dragConstraints = {{left : 0, right : 0, top : 0, bottom : 0}} dragElastic = {1} transition = {{duration : 0.5}}></motion.img>
 				</Text>
 				<Group
 					spacing={2}

@@ -1,10 +1,13 @@
 import { Accordion,createStyles } from '@mantine/core';
+import {motion} from "framer-motion";
+
 
 const useStyles = createStyles((theme) => ({
     root: {
       backgroundColor: "#0B022122",
       borderRadius: theme.radius.sm,
       color : "white",
+      marginBottom : "3rem",
     },
   
     item: {
@@ -12,14 +15,15 @@ const useStyles = createStyles((theme) => ({
       border: '1px solid transparent',
       position: 'relative',
       zIndex: 0,
+      marginBottom : "0.5rem",
       color : "white",
       transition: 'transform 150ms ease',
-      borderColor: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2],
+      borderColor: "#f5bffb",
       '&[data-active]': {
         transform: 'scale(1.03)',
         backgroundColor: "#0B0221",
         boxShadow: theme.shadows.md,
-        borderColor: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2],
+        borderColor: "#f5bffb",
         borderRadius: theme.radius.md,
         zIndex: 1,
       },
@@ -39,9 +43,9 @@ const FaQs = () => {
     const { classes } = useStyles();
 
   return (
-    <div className="aboutPage" id="aboutus">
+    <div className="aboutPage" id="faqs">
       <div className="inBox">
-        <div className="Box">
+        <motion.div className="Box" initial = {{opacity : 0}} whileInView={{opacity : 1}} transition={{duration : 1}}>
           <div className="text-wrapper">FAQs</div>
           <Accordion       sx={{ width : "100%", marginTop : "4rem" }}
       mx="auto"
@@ -63,8 +67,25 @@ const FaQs = () => {
         <Accordion.Control>No annoying focus ring</Accordion.Control>
         <Accordion.Panel>With new :focus-visible pseudo-class focus ring appears only when user navigates with keyboard</Accordion.Panel>
       </Accordion.Item>
+      <Accordion.Item value="focus-ring1">
+        <Accordion.Control>No annoying focus ring</Accordion.Control>
+        <Accordion.Panel>With new :focus-visible pseudo-class focus ring appears only when user navigates with keyboard</Accordion.Panel>
+      </Accordion.Item>
+      <Accordion.Item value="focus-ring2">
+        <Accordion.Control>No annoying focus ring</Accordion.Control>
+        <Accordion.Panel>With new :focus-visible pseudo-class focus ring appears only when user navigates with keyboard</Accordion.Panel>
+      </Accordion.Item>
+      <Accordion.Item value="focus-ring3">
+        <Accordion.Control>No annoying focus ring</Accordion.Control>
+        <Accordion.Panel>With new :focus-visible pseudo-class focus ring appears only when user navigates with keyboard</Accordion.Panel>
+      </Accordion.Item>
+      <Accordion.Item value="focus-ring4">
+        <Accordion.Control>No annoying focus ring</Accordion.Control>
+        <Accordion.Panel>With new :focus-visible pseudo-class focus ring appears only when user navigates with keyboard</Accordion.Panel>
+      </Accordion.Item>
+
     </Accordion>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
