@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=JetBrains+Mono:wght@300&family=Montserrat:wght@300&family=PT+Sans:wght@700&family=Roboto+Mono:wght@300&family=Syne:wght@700&display=swap");
 
+
+html{
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  background: linear-gradient(180deg, #0b0221 0%, #0b0121 100%);
   color: #fff;
   font-family: Inter;
-
-  margin-top: 20px;
   padding: 0;
+}
+
+.containerreg{
+  background: linear-gradient(180deg, #0b0221 0%, #0b0121 100%);
 }
 
 h1 {

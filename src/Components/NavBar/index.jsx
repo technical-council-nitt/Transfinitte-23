@@ -95,7 +95,8 @@ const NavBar = () => {
 	{'label' : "Contact", url : "#contact"},
 	{'label' : "Sponsors", url : "#sponsors"},
 	{'label' : "Timeline", url : "#timeline"},
-	{'label' : "FaQs", url : "#faqs"}];
+	{'label' : "FaQs", url : "#faqs"},
+	{'label' : "Judges", url : "#judges"}];
 
 	const [opened, { toggle, close }] = useDisclosure(false);
 	const [active, setActive] = useState(links[0].link);

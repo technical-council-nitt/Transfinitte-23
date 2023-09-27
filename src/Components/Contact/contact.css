@@ -1,6 +1,54 @@
+
+
+.transfinitte-footer{
+    width : 20vw;
+    display : inline-block;
+    text-align : right;
+}
+
+.footer-d1{
+    width: 30vw;
+    display: inline-block;
+}
+
+.footer-d2{
+    width: 30vw;
+    display: inline-block;
+}
+
+.mainc{
+   width : 80vw;
+    margin-left : auto;
+    margin-right : auto;
+    padding : 0rem 6rem;
+}
+
 @media only screen and (max-width: 600px) {
     .mainc{
-        text-align: center;
+        text-align: left;
         line-height: 2;
+        padding : 1rem;
+    }
+    .footer-d1{
+        width: 50%;
+        display: inline-block;
+    }
+    
+    .footer-d2{
+        width: 50%;
+        display: inline-block;
+    }
+    .transfinitte-footer{
+        margin-top: 3rem;
+        width: 100%;
+        display: block;
+        text-align: center;
     }
   }
+
+.mainc a{
+    color: white;
+}
+.mainc a:hover{
+    color: #f5bffb;
+}

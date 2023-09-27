@@ -1,0 +1,10 @@
+
+
+.bg{
+    background: linear-gradient(180deg, #0b0221 0%, #0b0121 100%);
+
+}
+
+.vertical-timeline::before{
+    background: #f5bffb;
+}

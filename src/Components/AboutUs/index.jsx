@@ -37,24 +37,19 @@ const AboutUs = () => {
     <div className="aboutPage" id="aboutus">
       <div className="inBox">
         <div className="Box">
-          <motion.div className="text-wrapper" initial = {{opacity : 0}} whileInView={{opacity : 1}} transition={{duration : 1}} >About Us</motion.div>
-          <motion.p initial = {{opacity : 0}} whileInView={{opacity : 1}} transition={{duration : 1}} className="div">
-            The department lays prime focus on academics interspersed with
-            co-curricular and extra-curricular activities that bring the
-            versatility of its students to the fore and gives them a sound sense
-            of perspective. The faculty comprises of experienced and dedicated
-            teachers who with their expert inputs encourage students to explore
-            new avenues. The computer society “Websters” was started with the
-            aim to foster interest in the world of computers and technology. It
-            provides a platform for like-minded brains to communicate with each
-            other and expand their horizons.
+          <motion.div className="text-wrapper" viewport={{once : true}} initial = {{opacity : 0}} whileInView={{opacity : 1}} transition={{duration : 1}} >About Us</motion.div>
+          <motion.p initial = {{opacity : 0}} viewport={{once : true}} whileInView={{opacity : 1}} transition={{duration : 1}} className="div">
+          Welcome to TransfiNITTe, the pinnacle of innovation and technology hosted by the Technical Council of the National Institute of Technology, Tiruchirappalli, in collaboration with SCIENT, the Student Centre for Innovation in Engineering and Technology-NITT. Our journey began with a vision to foster creativity, push boundaries, and redefine possibilities. As we gear up for our fifth edition, TransfiNITTe'23 promises to be an electrifying experience like never before. TransfiNITTe'22 was a testament to the unyielding spirit of innovation. With over 50 teams and 300+ brilliant minds from NIT Trichy, it was a 42-hour marathon of coding, ideation, and relentless problem-solving. Together, we tackled challenges spanning a diverse array of software and hardware domains. TransfiNITTe'23 aspires to raise the bar even higher. With a goal of hosting 100+ teams and 500+ participants, we are set to create history once again. For us, this event is not just about innovation; it's about forging meaningful partnerships, driving change, and celebrating the magic that happens when brilliant minds unite.
           </motion.p>
+          <motion.div initial = {{ opacity : 0}} viewport={{once : true}} whileInView={{ opacity : 1}} transition={{duration : 1}}>
           <Carousel sx={{ maxWidth : "30rem", marginTop : "2rem", marginBottom : "2rem"}} mx="auto"  loop auto plugins={[autoplay.current]}
       onMouseEnter={autoplay.current.stop}
       onMouseLeave={autoplay.current.reset}
       classNames={classes}>
             {slides}
           </Carousel>
+          </motion.div>
+          
         </div>
       </div>
     </div>

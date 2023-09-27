@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Select, TextInput } from "@mantine/core";
 
 import "./register.css";
 
@@ -48,7 +49,7 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div className="containerreg">
       <h1>Registration Page</h1>
       <form id="my-form" onSubmit={handleSubmit} >
         <div>
@@ -136,17 +137,49 @@ const Register = () => {
         </div>
         <div>
           <label htmlFor="domain">Domain:</label>
-          <select
+          <Select
+           
+            placeholder="Pick one"
+            onChange={(e) => setDomain(e)}
+            name="Domain"
+            id="domain"
+            required
+            transition="pop-top-left"
+            transitionDuration={80}
+            transitionTimingFunction="ease"
+            data={[
+              { value: '', label: 'Select your domain' },
+              { value: 'Software', label: 'Software' },
+              { value: 'Hardware', label: 'Hardware' },
+            ]}
+            styles={(theme) => ({
+          root : {
+            marginBottom : "2rem",
+          },
+        item: {
+          // applies styles to selected item
+          '&[data-selected]': {
+            '&, &:hover': {
+              backgroundColor: "#70157a",
+              color: "white",
+            },
+          },
+
+          // applies styles to hovered item (with mouse or keyboard)
+          '&[data-hovered]': {},
+        },
+      })}
+          />
+          {/* <Select
             name="Domain"
             id="domain"
             value={domain}
-            onChange={(e) => setDomain(e.target.value)}
             required
           >
             <option value="">Select Domain</option>
             <option value="Software">Software</option>
             <option value="Hardware">Hardware</option>
-          </select>
+          </Select> */}
         </div>
         <button type="submit" className="btnreg">Register</button>
       </form>

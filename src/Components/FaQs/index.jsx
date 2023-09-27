@@ -45,7 +45,7 @@ const FaQs = () => {
   return (
     <div className="aboutPage" id="faqs">
       <div className="inBox">
-        <motion.div className="Box" initial = {{opacity : 0}} whileInView={{opacity : 1}} transition={{duration : 1}}>
+        <motion.div viewport={{once : true}} className="Box" initial = {{opacity : 0}} whileInView={{opacity : 1}} transition={{duration : 1, delay : 0.5}}>
           <div className="text-wrapper">FAQs</div>
           <Accordion       sx={{ width : "100%", marginTop : "4rem" }}
       mx="auto"
