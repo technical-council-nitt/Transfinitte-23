@@ -1,5 +1,6 @@
 import Router from './Router'
 import { MantineProvider } from '@mantine/core';
+import { NotificationsProvider } from '@mantine/notifications';
 
 
 function App() {
@@ -7,7 +8,10 @@ function App() {
   return (
     <>
         <MantineProvider>
-      <Router />
+        <NotificationsProvider>
+        <Router />
+
+        </NotificationsProvider>
       </MantineProvider>
     </>
   )

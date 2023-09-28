@@ -44,7 +44,10 @@ const Landing = () => {
         <h2>Innovation Knows No Bounds</h2>
         <div className="buttonHolder">
           <button id="regbtn" onClick={() => {window.location.href = "/register"}}>REGISTER NOW</button>
-          <button id="archbtn">2022 ARCHIVE</button>
+          <button id="archbtn" onClick={() => {window.open(
+  'https://drive.google.com/file/d/1PcIjK3qWJYjgxCiBnXAnTdjH5rwDA2KU/view?usp=sharing',
+  '_blank' // <- This is what makes it open in a new window.
+);}}>2022 ARCHIVE</button>
         </div>
       </div>
       <motion.div className="timer" initial={{opacity : 0, transform : "scale(0.1)"}} animate ={{opacity : 1, transform : "scale(1)"}} transition={{duration : 1, delay : 1}}>

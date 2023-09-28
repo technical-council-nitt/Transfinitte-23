@@ -76,6 +76,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   
   .title {
     flex-shrink: 0;
