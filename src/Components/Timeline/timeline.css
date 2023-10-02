@@ -25,6 +25,8 @@
     }
     .vertical-timeline-element-content{
         font-size: 1rem;
+        margin-left: 3rem;
+        margin-right: 1rem;
     }
   }
 

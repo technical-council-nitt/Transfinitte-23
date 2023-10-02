@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import "./timeline.css";
 import { Text,Title } from '@mantine/core';
-import {IconBrowserCheck, IconConfetti, IconDeviceLaptop, IconChefHat,IconCoffee,IconMicrophone2, IconGrill, IconAnalyze, IconPresentation, IconAward} from "@tabler/icons-react";
+import {IconCircleCheck,IconBrowserCheck, IconConfetti, IconDeviceLaptop, IconChefHat,IconCoffee,IconMicrophone2, IconGrill, IconAnalyze, IconPresentation, IconAward} from "@tabler/icons-react";
 
 
 const TimeLine = () => {
@@ -69,7 +69,7 @@ const TimeLine = () => {
     iconStyle={{ background: '#0E153A', color: '#fff', 'fontsize':'200px',boxShadow: "0 0 0 4px #f5bffb, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)"}}
   >
     <IconCoffee style={{color : "#f5bffb"}} size={"5rem"} strokeWidth={"1px"}/>
-    <Text >8:00 AM - BreakFast</Text>
+    <Text >8:00 AM - Breakfast</Text>
     
 
     
@@ -138,12 +138,24 @@ const TimeLine = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work test"
+    contentStyle={{ background: 'rgba(255,255,255,0.05)', color: '#fff', boxShadow : "0 3px 0 #f5bffb", display : "flex", justifyContent : "space-around", alignItems : "center"}}
+    contentArrowStyle={{ borderRight: '7px solid  rgba(255,255,255,0.05)' }}
+    iconStyle={{ background: '#0E153A', color: '#fff', 'fontsize':'200px',boxShadow: "0 0 0 4px #f5bffb, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)"}}
+  >
+    <IconCircleCheck style={{color : "#f5bffb"}} size={"5rem"} strokeWidth={"1px"}/>
+    <Text >10:30 AM - Hackathon Ends</Text>
+    
+
+    
+  </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work test"
     contentStyle={{ background: 'rgba(255,255,255,0.05)', color: '#fff', boxShadow : "0 3px 0 #f5bffb" }}
     contentArrowStyle={{ borderRight: '7px solid  rgba(255,255,255,0.05)' }}
     iconStyle={{ background: '#0E153A', color: '#fff', 'fontsize':'200px',boxShadow: "0 0 0 4px #f5bffb, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)"}}
   >
     <IconPresentation style={{color : "#f5bffb"}} size={"5rem"} strokeWidth={"1px"}/>
-    <Text >1:00 PM - Judging Starts</Text>
+    <Text >11:00 AM - Judging Starts</Text>
   </VerticalTimelineElement>
 
   <VerticalTimelineElement

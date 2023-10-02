@@ -33,7 +33,9 @@
         width: 50%;
         display: inline-block;
     }
-    
+    .mail{
+        margin-bottom: 1rem;
+    }
     .footer-d2{
         width: 45%;
         display: inline-block;

@@ -78,8 +78,8 @@ const Judges = () => {
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
               <div className="info">
                 <div className="designation">HARDWARE</div>
-                <div className="title">Dr. Selvakumar</div>
-                <div className="place">Professor(HAG) at NITT</div>
+                <div className="title">Dr. S.S Karthikeyan</div>
+                <div className="place">Associate Professor at NITT</div>
               </div>
               <img src={ssk} alt="logo" />
             </motion.div>

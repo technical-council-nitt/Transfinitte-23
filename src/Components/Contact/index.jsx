@@ -12,10 +12,28 @@ const Contact = () => {
                 <div  className="mainc">
                     <div className="footer-d1">
                         <h3 style={{marginBottom : "0.5rem", marginTop : "0.5rem"}}>Contact</h3>
-                        <p style={{display : "flex", alignItems : "center"}}><IconMail style={{marginRight : "0.5rem"}} onClick={() => {window.open("mailto:technicalcouncil@pragyan.org")}}/><span className="hidemob">technicalcouncil@pragyan.org</span></p>
-                        <p style={{display : "flex", alignItems : "center"}}><IconPhoneCall style={{marginRight : "0.5rem"}}/> 96706 64115</p>
+                        <p style={{display : "flex", alignItems : "center"}} className="mail"><IconMail style={{marginRight : "0.5rem"}} onClick={() => {window.open("mailto:technicalcouncil@pragyan.org")}}/><span className="hidemob">technicalcouncil@pragyan.org</span></p>
+                        {/* <p style={{display : "flex", alignItems : "center"}}><IconPhoneCall style={{marginRight : "0.5rem"}}/> 96706 64115</p>
+                        <span>Akash Jaiswal</span>
                         <p style={{display : "flex", alignItems : "center"}}><IconPhoneCall style={{marginRight : "0.5rem"}}/> 93808 72847</p>
-                        <p style={{display : "flex", alignItems : "center"}}><IconPhoneCall style={{marginRight : "0.5rem"}}/> 77609 42275</p>
+                        <span>Jairam</span> */}
+                        <div style={{display : "flex"}}>
+                        <IconPhoneCall style={{marginRight : "0.5rem", width : "1.8rem"}}/>
+                        <p style={{display : "flex", alignItems : "center"}}> 96706 64115  Akash</p>
+                        <span> </span>
+                        </div>
+                        <div style={{display : "flex"}}>
+                        <IconPhoneCall style={{marginRight : "0.5rem", width : "1.8rem"}}/>
+                        <p style={{display : "flex", alignItems : "center"}}> 93808 72847  Jairam</p>
+                        <span> </span>
+                        </div>
+                        <div style={{display : "flex"}}>
+                        <IconPhoneCall style={{marginRight : "0.5rem", width : "1.8rem"}}/>
+                        <p style={{display : "flex", alignItems : "center"}}> 77609 42275  Bandavya</p>
+                        <span> </span>
+                        </div>
+                        
+
 
                         <h3 style={{marginBottom : "0.5rem", marginTop : "0.5rem"}}>Problem Statements</h3>
                         <a style={{cursor : "pointer"}} onClick={() => {window.open(
