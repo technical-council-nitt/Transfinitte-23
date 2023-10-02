@@ -23,6 +23,10 @@
     padding : 0rem 6rem;
 }
 
+.hidemob{
+    margin-top: 2rem;
+}
+
 @media only screen and (max-width: 600px) {
     .mainc{
         text-align: left;
@@ -48,7 +52,7 @@
         text-align: center;
     }
     .hidemob{
-        display: none;
+        margin-top: 3rem;
     }
   }
 

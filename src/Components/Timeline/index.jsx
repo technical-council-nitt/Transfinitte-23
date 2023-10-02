@@ -131,7 +131,7 @@ const TimeLine = () => {
     iconStyle={{ background: '#0E153A', color: '#fff', 'fontsize':'200px',boxShadow: "0 0 0 4px #f5bffb, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)"}}
   >
     <IconCoffee style={{color : "#f5bffb"}} size={"5rem"} strokeWidth={"1px"}/>
-    <Text >8:00 AM - BreakFast</Text>
+    <Text >8:00 AM - Breakfast</Text>
     
 
     
