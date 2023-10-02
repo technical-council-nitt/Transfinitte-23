@@ -45,6 +45,9 @@
         display: block;
         text-align: center;
     }
+    .hidemob{
+        display: none;
+    }
   }
 
 .mainc a{

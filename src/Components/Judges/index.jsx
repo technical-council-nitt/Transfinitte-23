@@ -6,7 +6,8 @@ import tanvi from "../../assets/tanvi.jpg";
 import sandhya from "../../assets/sandhya.jpg";
 import vivek from "../../assets/vivek.jpg";
 import ankur from "../../assets/ankur.jpg";
-
+import ssk from "../../assets/SSK.jpg";
+import profile from "../../assets/default.png";
 
 import {motion} from "framer-motion";
 
@@ -15,7 +16,7 @@ const Judges = () => {
   return (
     <div className="judgesPage" id="judges">
       <div className="Inbox">
-        <div className="judges-speakers">Previous edition Judges</div>
+        <div className="judges-speakers" style={{padding : "1rem"}}>Previous edition Judges</div>
         <div className="box">
           <div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}}  whileInView={{transform : "scale(1)"}} transition={{delay : 0.2}}>
@@ -77,27 +78,37 @@ const Judges = () => {
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
               <div className="info">
                 <div className="designation">HARDWARE</div>
-                <div className="title">Dr. Ankur Singh Rana</div>
-                <div className="place">Assistant Professor at NITT</div>
+                <div className="title">Dr. Selvakumar</div>
+                <div className="place">Professor(HAG) at NITT</div>
               </div>
-              <img src={ankur} alt="logo" />
+              <img src={ssk} alt="logo" />
             </motion.div>
           </div>
           <div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
               <div className="info">
                 <div className="designation">HARDWARE</div>
-                <div className="title">Dr. Ankur Singh Rana</div>
+                <div className="title">Dr. Sangeetha</div>
+                <div className="place">Associate Professor at NITT</div>
+              </div>
+              <img src={profile} alt="logo" />
+            </motion.div>
+          </div>
+          <div className="inlineBlock">
+            <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
+              <div className="info">
+                <div className="designation">HARDWARE</div>
+                <div className="title">Dr. R. Periyasamy</div>
                 <div className="place">Assistant Professor at NITT</div>
               </div>
-              <img src={ankur} alt="logo" />
+              <img src={profile} alt="logo" />
             </motion.div>
           </div>
           
          
         
         </div>
-        <p style={{textAlign : "center", color : "#f5bffb"}}>We will be updating the judges and speakers for this edition soon.</p>
+        <p style={{textAlign : "center", color : "#f5bffb", padding : "1rem"}}>We will be updating the judges and speakers for this edition soon.</p>
         <br/>
       </div>
     </div>

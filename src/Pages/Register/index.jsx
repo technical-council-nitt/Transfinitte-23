@@ -19,7 +19,7 @@ const Register = () => {
   const [tempName, setTempName] = useState("");
   const [tempRollno, setTempRollno] = useState("");
   const [paymentProofLink, setPaymentProofLink] = useState("");
-  const comingSoon = false;
+  const comingSoon = true;
   const validateForm = () => {
     const teamLeaderRollNoPattern = /^\d{9}$/;
     if (!teamLeaderRollNoPattern.test(teamLeaderRollNo)) {
@@ -128,6 +128,8 @@ const Register = () => {
   };
   if(comingSoon){
     return(
+      <BackgroundImage src={bg} className="landingbg">
+
       <div className="containerreg">
       <div style={{textAlign : "center"}}>
       <h1>Registrations opening Soon..</h1>
@@ -135,6 +137,7 @@ const Register = () => {
       </div>
         
       </div>
+      </BackgroundImage>
     )
   }
   return (

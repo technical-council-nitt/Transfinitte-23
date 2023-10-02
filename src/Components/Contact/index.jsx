@@ -12,10 +12,16 @@ const Contact = () => {
                 <div  className="mainc">
                     <div className="footer-d1">
                         <h3 style={{marginBottom : "0.5rem", marginTop : "0.5rem"}}>Contact</h3>
-                        <p style={{display : "flex", alignItems : "center"}}><IconPhoneCall style={{marginRight : "0.5rem"}}/>  123456789</p>
-                        <p style={{display : "flex", alignItems : "center"}}><IconMail style={{marginRight : "0.5rem"}}/> 123@gmail.com</p>
+                        <p style={{display : "flex", alignItems : "center"}}><IconMail style={{marginRight : "0.5rem"}} onClick={() => {window.open("mailto:technicalcouncil@pragyan.org")}}/><span className="hidemob">technicalcouncil@pragyan.org</span></p>
+                        <p style={{display : "flex", alignItems : "center"}}><IconPhoneCall style={{marginRight : "0.5rem"}}/> 96706 64115</p>
+                        <p style={{display : "flex", alignItems : "center"}}><IconPhoneCall style={{marginRight : "0.5rem"}}/> 93808 72847</p>
+                        <p style={{display : "flex", alignItems : "center"}}><IconPhoneCall style={{marginRight : "0.5rem"}}/> 77609 42275</p>
+
                         <h3 style={{marginBottom : "0.5rem", marginTop : "0.5rem"}}>Problem Statements</h3>
-                        <a style={{cursor : "pointer"}}>2022 archive</a> <br/>
+                        <a style={{cursor : "pointer"}} onClick={() => {window.open(
+  'https://drive.google.com/file/d/1PcIjK3qWJYjgxCiBnXAnTdjH5rwDA2KU/view?usp=sharing',
+  '_blank' // <- This is what makes it open in a new window.
+);}}>2022 archive</a> <br/>
              
 
                     </div>
@@ -24,9 +30,14 @@ const Contact = () => {
                         <p>Orion, Lecture Hall</p>
                         <p>NIT Trichy</p>
                         <h3 style={{marginBottom : "0.5rem", marginTop : "0.5rem"}}>Social</h3>
-                        <a style={{ cursor : "pointer", marginRight : "0.5rem"}}><IconBrandX size={"2rem"}/></a> 
-                        <a style={{ cursor : "pointer", marginRight : "0.5rem"}}><IconBrandInstagram size={"2rem"}/></a> 
-                        <a style={{ cursor : "pointer", marginRight : "0.5rem"}}><IconBrandLinkedin size={"2rem"}/></a> 
+                        <a style={{ cursor : "pointer", marginRight : "0.5rem"}} onClick={() => {window.open(
+  'https://www.instagram.com/tc_nitt/?hl=en',
+  '_blank' // <- This is what makes it open in a new window.
+);}}><IconBrandInstagram size={"2rem"}/></a> 
+                        <a style={{ cursor : "pointer", marginRight : "0.5rem"}} onClick={() => {window.open(
+  'https://www.linkedin.com/company/technical-council-nit-trichy/mycompany/',
+  '_blank' // <- This is what makes it open in a new window.
+);}}><IconBrandLinkedin size={"2rem"}/></a> 
 
                     </div>
                     <div  className="transfinitte-footer">
@@ -35,7 +46,6 @@ const Contact = () => {
                     </div>
                 </div>
                 <br/>
-                <p style={{textAlign : "center"}}>Crafted with ❤️ by Technical Council.</p>
             </section>
         </>
     )
