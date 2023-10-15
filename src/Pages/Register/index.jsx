@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Select, TextInput,BackgroundImage, Text } from "@mantine/core";
 import logo from "../../assets/logo.svg";
-import qr from "../../assets/qr.jpg";
+import qr from "../../assets/UPI.jpeg";
 import bg from "../../assets/bg.png";
 import { showNotification,updateNotification } from '@mantine/notifications';
-import { IconCheck } from "@tabler/icons-react";
-
+import { IconCheck, IconBook2 } from "@tabler/icons-react";
+import {motion} from "framer-motion";
 import "./register.css";
+import { Checkbox } from '@mantine/core';
+
 
 const Register = () => {
   const [teamLeaderName, setTeamLeaderName] = useState("");
@@ -19,8 +21,15 @@ const Register = () => {
   const [tempName, setTempName] = useState("");
   const [tempRollno, setTempRollno] = useState("");
   const [paymentProofLink, setPaymentProofLink] = useState("");
-  const comingSoon = true;
+  const comingSoon = false;
   const validateForm = () => {
+    
+    if(!accept){
+      showNotification({
+        title: "Accept the terms and conditions",
+      })
+      return false;
+    }
     const teamLeaderRollNoPattern = /^\d{9}$/;
     if (!teamLeaderRollNoPattern.test(teamLeaderRollNo)) {
       
@@ -71,7 +80,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(teamLeaderName);
+  
     if (validateForm()) {
       const formData = new FormData();
       formData.append("TeamLeaderName", teamLeaderName);
@@ -121,6 +130,8 @@ const Register = () => {
     }
   };
 
+  const [accept, setAccept] = useState(false);
+
   const removeMember = (indexToRemove) => {
     setMembers((prevMembers) =>
       prevMembers.filter((_, index) => index !== indexToRemove)
@@ -145,7 +156,10 @@ const Register = () => {
     <div>
     <div className="containerreg">
       <h1>Registration Page</h1>
-
+      <motion.button initial = {{scale : 0.5}} animate = {{ scale : 1}} transition={{ delay : 0.3}} className="btnreg" onClick={() => {window.open(
+  'https://drive.google.com/file/d/1ik4B97YNQb4YX0d4pKfb59Was8znyMRT/view?usp=sharing',
+  '_blank' // <- This is what makes it open in a new window.
+);}}><IconBook2 /> Rule Book</motion.button>
       <form id="my-form" onSubmit={handleSubmit}>
         <div>
           
@@ -339,7 +353,10 @@ const Register = () => {
         </div>
         <Text c={"white"} style={{fontWeight : 600, marginBottom : '0.5rem'}}>UPI QR CODE</Text>
         <Text c={"white"} style={{fontWeight : 600, marginBottom : '0.5rem'}}>Participation fee : Rs. 500</Text>
+        <div style={{display : "flex", justifyContent : "center", alignItems : "center"}}>
         <img src={qr} style={{marginBottom : "1rem"}} className="qr"></img>
+
+        </div>
         <div>
           
           <TextInput
@@ -359,7 +376,18 @@ const Register = () => {
             })}
           />
         </div>
-          
+        <Checkbox
+      label="I have read the rulebook and accept the terms and conditions"
+      onChange={(e) => setAccept(e.target.checked)}
+      styles={{
+        label : {
+          color : "white"
+        },
+        root : {
+          marginTop : "1rem",
+        }
+      }}
+    />
         <button type="submit" className="btnreg2">
           Register
         </button>

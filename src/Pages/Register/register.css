@@ -133,6 +133,10 @@ li {
   font-size: 13px;
   transition: 0.3s;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 
@@ -175,6 +179,10 @@ li {
   }
 }
 
+.qr{
+  width: 20rem;
+  display: flex;
+}
 
 @media only screen and (max-width: 600px) {
   .qr{

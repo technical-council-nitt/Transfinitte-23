@@ -1,10 +1,10 @@
 import "./styles.css";
 import { Carousel } from '@mantine/carousel';
 import { Image, createStyles } from "@mantine/core";
-import Carousel1 from "../../assets/Carousel1.jpg";
-import Carousel2 from "../../assets/Carousel2.jpg";
-import Carousel3 from "../../assets/Carousel3.jpg";
-import Carousel4 from "../../assets/Carousel4.jpg";
+import Carousel1 from "../../assets/Carousel1_11zon.jpg";
+import Carousel2 from "../../assets/Carousel2_11zon.jpg";
+import Carousel3 from "../../assets/Carousel3_11zon.jpg";
+import Carousel4 from "../../assets/Carousel4_11zon.jpg";
 
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from 'react';

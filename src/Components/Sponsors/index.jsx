@@ -26,7 +26,7 @@ const Sponsors = () => {
             </div>
             <div style={{width : "fit-content", display : "inline-block"}}>
             <motion.img src={tezos} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5}}></motion.img>
-            <h3 style={{ textAlign : "center", marginBottom : "2rem", marginLeft : "auto", marginRight : "auto"}}>Block chain Partner</h3>
+            <h3 style={{ textAlign : "center", marginBottom : "2rem", marginLeft : "auto", marginRight : "auto"}}>Blockchain Partner</h3>
             </div>
             <div style={{width : "fit-content", display : "inline-block"}}>
             <motion.img src={bluelearn} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5}}></motion.img>
