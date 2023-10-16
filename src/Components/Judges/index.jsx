@@ -1,13 +1,13 @@
 import "./styles.css";
 import logo from "../../assets/logo.svg";
-import kishore from "../../assets/kishore.jpg";
-import praveen from "../../assets/praveen.jpg";
-import tanvi from "../../assets/tanvi.jpg";
-import sandhya from "../../assets/sandhya.jpg";
-import vivek from "../../assets/vivek.jpg";
-import ankur from "../../assets/ankur.jpg";
-import ssk from "../../assets/SSK.jpg";
-import profile from "../../assets/default.png";
+import anand from "../../assets/anand.jpg";
+import kumar from "../../assets/kumar.jpg";
+import anirudh from "../../assets/anirudh.jpg";
+import ayush from "../../assets/ayush.jpg";
+import rakesh from "../../assets/rakesh.jpg";
+import abishake from "../../assets/abishake.jpg";
+import subash from "../../assets/subash.jpg";
+import ram from "../../assets/Ram.jpg";
 
 import {motion} from "framer-motion";
 
@@ -16,99 +16,88 @@ const Judges = () => {
   return (
     <div className="judgesPage" id="judges">
       <div className="Inbox">
-        <div className="judges-speakers" style={{padding : "1rem"}}>Previous edition Judges</div>
+        <div className="judges-speakers" style={{padding : "1rem"}}>Judges</div>
         <div className="box">
           <div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}}  whileInView={{transform : "scale(1)"}} transition={{delay : 0.2}}>
               <div className="info">
                 <div className="designation">SOFTWARE</div>
-                <div className="title">KISHORE V</div>
-                <div className="place">Senior Associate, Morgan Stanley</div>
+                <div className="title">Anand Kumar</div>
+                <div className="place">SOC design Engineering manager at Intel</div>
               </div>
-              <img src={kishore} alt="logo" />
+              <img src={anand} alt="logo" />
+            </motion.div>
+          </div>
+          <div className="inlineBlock">
+            <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.4}}>
+              <div className="info">
+                <div className="designation">SOFTWARE</div>
+                <div className="title">Anirudh R</div>
+                <div className="place">Software Engineer at Oracle </div>
+              </div>
+              <img src={anirudh} alt="logo" />
+            </motion.div>
+          </div>
+          <div className="inlineBlock">
+            <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.5}}>
+              <div className="info">
+                <div className="designation">SOFTWARE</div>
+                <div className="title">Ayush Singh</div>
+                <div className="place">Software Engineer at Microsoft, SIH'22 winner </div>
+              </div>
+              <img src={ayush} alt="logo" />
+            </motion.div>
+          </div>
+          <div className="inlineBlock">
+            <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
+              <div className="info">
+                <div className="designation">HARDWARE</div>
+                <div className="title">Ram Sreevaths</div>
+                <div className="place">Software Developer at Oracle</div>
+              </div>
+              <img src={ram} alt="logo" />
             </motion.div>
           </div>
           <div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.3}}>
               <div className="info">
                 <div className="designation">SOFTWARE</div>
-                <div className="title">N Praveen</div>
-                <div className="place">Software Engineer at Rubrik, Inc</div>
+                <div className="title">Kumar Nandan</div>
+                <div className="place">SOC Technical Design Lead at Intel</div>
               </div>
-              <img src={praveen} alt="logo" />
-            </motion.div>
-          </div><div className="inlineBlock">
-            <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.4}}>
-              <div className="info">
-                <div className="designation">SOFTWARE</div>
-                <div className="title">Tanvi K.</div>
-                <div className="place">Gleam India Ambassador, Microsoft </div>
-              </div>
-              <img src={tanvi} alt="logo" />
-            </motion.div>
-          </div><div className="inlineBlock">
-            <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.5}}>
-              <div className="info">
-                <div className="designation">SOFTWARE</div>
-                <div className="title">Sandhya Saravanan</div>
-                <div className="place">Research Fellow at Microsoft </div>
-              </div>
-              <img src={sandhya} alt="logo" />
+              <img src={kumar} alt="logo" />
             </motion.div>
           </div><div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.6}}>
               <div className="info">
                 <div className="designation">SOFTWARE</div>
-                <div className="title">Vivek Raveendran</div>
-                <div className="place">Software Engineer at LG </div>
+                <div className="title">Rayapalli Rakesh</div>
+                <div className="place">Software Engineer at Oracle </div>
               </div>
-              <img src={vivek} alt="logo" />
+              <img src={rakesh} alt="logo" />
             </motion.div>
           </div><div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
               <div className="info">
                 <div className="designation">HARDWARE</div>
-                <div className="title">Dr. Ankur Singh Rana</div>
-                <div className="place">Assistant Professor at NITT</div>
+                <div className="title">Abishake A</div>
+                <div className="place">SMT at D.E. Shaw, India</div>
               </div>
-              <img src={ankur} alt="logo" />
+              <img src={abishake} alt="logo" />
             </motion.div>
           </div>
           <div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
               <div className="info">
                 <div className="designation">HARDWARE</div>
-                <div className="title">Dr. S.S Karthikeyan</div>
-                <div className="place">Associate Professor at NITT</div>
+                <div className="title">Subash</div>
+                <div className="place">Analyst at Goldman Sachs</div>
               </div>
-              <img src={ssk} alt="logo" />
-            </motion.div>
-          </div>
-          <div className="inlineBlock">
-            <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
-              <div className="info">
-                <div className="designation">HARDWARE</div>
-                <div className="title">Dr. Sangeetha</div>
-                <div className="place">Associate Professor at NITT</div>
-              </div>
-              <img src={profile} alt="logo" />
-            </motion.div>
-          </div>
-          <div className="inlineBlock">
-            <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
-              <div className="info">
-                <div className="designation">HARDWARE</div>
-                <div className="title">Dr. R. Periyasamy</div>
-                <div className="place">Assistant Professor at NITT</div>
-              </div>
-              <img src={profile} alt="logo" />
+              <img src={subash} alt="logo" />
             </motion.div>
           </div>
           
-         
-        
         </div>
-        <p style={{textAlign : "center", color : "#f5bffb", padding : "1rem"}}>We will be updating the judges and speakers for this edition soon.</p>
         <br/>
       </div>
     </div>

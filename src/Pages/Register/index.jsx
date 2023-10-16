@@ -352,7 +352,7 @@ const Register = () => {
           />
         </div>
         <Text c={"white"} style={{fontWeight : 600, marginBottom : '0.5rem'}}>UPI QR CODE</Text>
-        <Text c={"white"} style={{fontWeight : 600, marginBottom : '0.5rem'}}>Participation fee : Rs. 500</Text>
+        <Text c={"white"} style={{fontWeight : 600, marginBottom : '0.5rem'}}>Participation fee : Rs. 500 per team</Text>
         <div style={{display : "flex", justifyContent : "center", alignItems : "center"}}>
         <img src={qr} style={{marginBottom : "1rem"}} className="qr"></img>
 
@@ -393,6 +393,7 @@ const Register = () => {
         </button>
         <a href="/">Back to home page</a>
       </form>
+      <Text style={{marginLeft : "auto", marginRight : "1rem"}}>For technical issues contact +91 8807247608</Text>
     </div>
     </div>
     </BackgroundImage>

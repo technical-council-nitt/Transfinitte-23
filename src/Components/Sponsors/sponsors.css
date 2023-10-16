@@ -5,10 +5,12 @@
     text-align: center;
 }
 
+
+
 .imageHolder img{
     /* border: 1px solid white; */
     padding: 1rem;
-    width: 5rem;
+    width: 7rem;
     height: 5rem;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -23,7 +25,7 @@
     .imageHolder img{
         /* border: 1px solid white; */
         padding: 1rem;
-        width: 4rem;
+        width: 6rem;
         height: 4rem;
         margin-left: 1rem;
         margin-right: 1rem;
