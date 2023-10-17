@@ -1,6 +1,16 @@
 
 
-import logo from "../../assets/logo.svg";
+import boeing from "../../assets/boeing.png";
+import charged from "../../assets/charged.png";
+import crewsphere from '../../assets/crewsphere.png';
+import gfg from "../../assets/gfg.png";
+import tezos from "../../assets/tezos.png";
+import netcon from "../../assets/netcon.png";
+import abhibus from "../../assets/abhibus.png";
+import pathway from "../../assets/pathway.png";
+
+
+
 import {motion} from "framer-motion";
 import "./sponsors.css";
 
@@ -14,19 +24,33 @@ const Sponsors = () => {
         <div className="Box">
           <div className="text-wrapper">Sponsors</div>
           <div className="imageHolder">
-            <motion.img src={logo} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5}}></motion.img>
-            <motion.img src={logo} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5, delay : 0.1}}></motion.img>
-            <motion.img src={logo} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5, delay : 0.2}}></motion.img>
-            <motion.img src={logo} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5, delay : 0.3}}></motion.img>
-            <motion.img src={logo} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5, delay : 0.4}}></motion.img>
-            <motion.img src={logo} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5, delay : 0.5}}></motion.img>
-            <motion.img src={logo} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5, delay : 0.6}}></motion.img>
-            <motion.img src={logo} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5, delay : 0.7}}></motion.img>
-            <motion.img src={logo} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5, delay : 0.8}}></motion.img>
-            <motion.img src={logo} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5, delay : 0.9}}></motion.img>
-
+            <div style={{width : "fit-content", display : "inline-block"}} className="block">
+            <motion.img src={pathway} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5}}></motion.img>
+            </div>
+            <div style={{width : "fit-content", display : "inline-block"}} className="block">
+            <motion.img src={charged} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5}}></motion.img>
+            </div>
+            <div style={{width : "fit-content", display : "inline-block"}} className="block">
+            <motion.img src={abhibus} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5}}></motion.img>
+            </div>
+            <div style={{width : "fit-content", display : "inline-block"}} className="block">
+            <motion.img src={boeing} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5}}></motion.img>
+          </div>
+            <div style={{width : "fit-content", display : "inline-block"}} className="block">
+            <motion.img src={netcon} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5}}></motion.img>
+          </div>
+            <div style={{width : "fit-content", display : "inline-block"}} className="block">
+            <motion.img src={tezos} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5}}></motion.img>
+          </div>
+            <div style={{width : "fit-content", display : "inline-block"}} className="block">
+            <motion.img src={gfg} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5}}></motion.img>
+          </div>
+            <div style={{width : "fit-content", display : "inline-block"}} className="block">
+            <motion.img src={crewsphere} initial = {{transform : "rotateZ(90deg)"}} viewport={{once : true}} whileInView = {{transform : "rotateX(0)"}} transition={{duration : 0.5}}></motion.img>
+          </div>
             
           </div>
+
         </div>
       </div>
     </div>

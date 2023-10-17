@@ -5,14 +5,17 @@
     text-align: center;
 }
 
+
+
 .imageHolder img{
     /* border: 1px solid white; */
     padding: 1rem;
-    width: 5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    border: 1px solid #f5bffb;
+    width: 7rem;
+    /* height: 5rem; */
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.5rem;
+    /* border: 1px solid #f5bffb; */
     border-radius: 0.5rem;
 }
 
@@ -22,11 +25,11 @@
     .imageHolder img{
         /* border: 1px solid white; */
         padding: 1rem;
-        width: 2rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        width: 6rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         margin-bottom: 1rem;
-        border: 1px solid #f5bffb;
+        /* border: 1px solid #f5bffb; */
         border-radius: 0.5rem;
     }
   }

@@ -23,6 +23,10 @@
     padding : 0rem 6rem;
 }
 
+.hidemob{
+    margin-top: 2rem;
+}
+
 @media only screen and (max-width: 600px) {
     .mainc{
         text-align: left;
@@ -33,16 +37,22 @@
         width: 50%;
         display: inline-block;
     }
-    
+    .mail{
+        margin-bottom: 1rem;
+    }
     .footer-d2{
-        width: 50%;
+        width: 45%;
         display: inline-block;
+        padding-left: 0.5rem;
     }
     .transfinitte-footer{
         margin-top: 3rem;
         width: 100%;
         display: block;
         text-align: center;
+    }
+    .hidemob{
+        margin-top: 3rem;
     }
   }
 

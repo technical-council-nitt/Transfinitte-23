@@ -8,3 +8,25 @@
 .vertical-timeline::before{
     background: #f5bffb;
 }
+
+.daytimeline{
+    text-align: center;
+}
+
+.vertical-timeline-element-content{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .daytimeline h1{
+        text-align: left;
+        margin-left: 1rem;
+        font-size: 1.6rem;
+    }
+    .vertical-timeline-element-content{
+        font-size: 1rem;
+        margin-left: 3rem;
+        margin-right: 1rem;
+    }
+  }
+
