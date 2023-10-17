@@ -1,0 +1,16 @@
+#logo {
+  height: 48px;
+}
+#tclogo {
+  height: 59px;
+  margin-left: 113px;
+}
+@media only screen and (max-width: 600px) {
+  #logo {
+    height: 36px;
+  }
+  #tclogo {
+    height: 44px;
+    margin-left: 56px;
+  }
+}

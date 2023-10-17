@@ -2,41 +2,57 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=PT+Sans:wght@700&family=Roboto+Mono:wght@300&family=Syne:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Montserrat:wght@300&family=PT+Sans:wght@700&family=Roboto+Mono:wght@300&family=Syne:wght@700&display=swap");
 
-
-.container{
-    height: 100vh;
-    border-radius: 0;
-    width: 100%;
+.container {
+  height: 100vh;
+  border-radius: 0;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landingbg {
+  animation: fadeIn 3s;
+}
+
+#sponsorText {
+  color: rgba(255, 255, 255, 0.8);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  margin: auto;
+}
+
+footer {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-
- body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: black;
-    overflow-x: hidden;
-    color: white;
- }
-
-  html{scroll-behavior:smooth}
-
-  .landingbg{
-    animation: fadeIn 3s;
+  100% {
+    opacity: 1;
   }
-
-    
-
-  @keyframes fadeIn {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity : 1;
-    }
-  }
-
+}
 
 * {
   margin: 0;
@@ -48,7 +64,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 25vh;
+  margin-top: 10vh;
 }
 
 .smallContainer h3 {
@@ -65,6 +81,7 @@
 }
 
 .smallContainer h1 {
+  margin-bottom: 0;
   background: linear-gradient(
     146deg,
     #ececec 20.35%,
@@ -80,7 +97,6 @@
   font-weight: 700;
   line-height: 67%;
   letter-spacing: -2.88px;
-  margin-top: 5vh;
 }
 
 .smallContainer h2 {
@@ -109,8 +125,34 @@
   align-items: center;
   background-repeat: no-repeat;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
+}
 
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.centerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  height: 35vh;
+}
+
+.centerContent h4 {
+  color: rgba(255, 255, 255, 0.8);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: PT Sans;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
 }
 
 #regbtn {
@@ -129,8 +171,8 @@
   transition: 0.3s;
 }
 
-#regbtn:hover{
-    background-color: #a3a3a3;
+#regbtn:hover {
+  background-color: #a3a3a3;
 }
 
 #archbtn {
@@ -147,11 +189,10 @@
   line-height: 150%; /* 27px */
   cursor: pointer;
   transition: 0.3s;
-
 }
 
-#archbtn:hover{
-    background-color: rgb(0,0,0,0.5);
+#archbtn:hover {
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 .timer {
@@ -204,47 +245,90 @@
   margin-left: 1rem;
 }
 
-footer {
-  color: rgba(255, 255, 255, 0.8);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
+#img1 {
+  height: 86px;
+  width: 161px;
 }
 
 @media only screen and (max-width: 600px) {
-    .smallContainer h1{
-        font-size: 2.5rem;
-        margin-bottom: 0;
-    }
-    .smallContainer h2{
-        margin-top: 0.5rem;
-        font-size: 1.2rem;
-        width: 100%;
-    }
-    #archbtn{
-        font-size: 0.7rem;
-    }
-    #regbtn{
-        font-size: 0.7rem;
-    }
-    .buttonHolder{
-        margin-top: 3rem;
-    }
-    .time{
-        font-size: 2rem;
-    }
-    .timeText{
-        font-size: 0.75rem;
-    }
-    .timer{
-        width: 15rem;
-        margin-bottom: 3rem;
-        margin-right: 1rem;
-    }
-    .smallContainer h3{
-        margin-bottom: 1rem;
-    }
+  #img1 {
+    height: 64px;
+    width: 91px;
+    margin-top: 12px;
   }
+  #img2 {
+    height: 37px;
+    width: 46px;
+    margin-left: -11px;
+  }
+  #img3 {
+    height: 18px;
+    width: 79px;
+  }
+  #img4 {
+    height: 32px;
+    width: 33px;
+  }
+  #img5 {
+    height: 27px;
+    width: 51px;
+  }
+  #img6 {
+    height: 44px;
+    width: 57px;
+  }
+  #img7 {
+    height: 56px;
+    width: 106px;
+  }
+  #img8 {
+    height: 46px;
+    width: 97px;
+  }
+  footer {
+    width: 100%;
+  }
+  .centerContent {
+    height: 25vh;
+  }
+
+  .smallContainer {
+    margin-top: 20vh;
+  }
+  .smallContainer h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  .smallContainer h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+  .smallContainer h2 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  #archbtn {
+    font-size: 0.7rem;
+  }
+  #regbtn {
+    font-size: 0.7rem;
+  }
+  .buttonHolder {
+    margin-top: 3rem;
+  }
+  .time {
+    font-size: 2rem;
+  }
+  .timeText {
+    font-size: 0.75rem;
+  }
+  .timer {
+    width: 15rem;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+  }
+  .smallContainer h3 {
+    margin-bottom: 1rem;
+  }
+}
