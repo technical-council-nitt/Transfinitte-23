@@ -3,7 +3,7 @@ import logo from "../../assets/logo.svg";
 import anand from "../../assets/anand.jpg";
 import kumar from "../../assets/kumar.jpg";
 import anirudh from "../../assets/anirudh.jpg";
-import ayush from "../../assets/ayush.jpg";
+import ayush from "../../assets/ayush.jpeg";
 import rakesh from "../../assets/rakesh.jpg";
 import abishake from "../../assets/abishake.jpg";
 import subash from "../../assets/subash.jpg";
@@ -21,7 +21,7 @@ const Judges = () => {
           <div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}}  whileInView={{transform : "scale(1)"}} transition={{delay : 0.2}}>
               <div className="info">
-                <div className="designation">SOFTWARE</div>
+                <div className="designation">HARDWARE</div>
                 <div className="title">Anand Kumar</div>
                 <div className="place">SOC design Engineering manager at Intel</div>
               </div>
@@ -43,7 +43,7 @@ const Judges = () => {
               <div className="info">
                 <div className="designation">SOFTWARE</div>
                 <div className="title">Ayush Singh</div>
-                <div className="place">Software Engineer at Microsoft, SIH'22 winner </div>
+                <div className="place">Software Engineer at Microsoft </div>
               </div>
               <img src={ayush} alt="logo" />
             </motion.div>
@@ -51,7 +51,7 @@ const Judges = () => {
           <div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
               <div className="info">
-                <div className="designation">HARDWARE</div>
+                <div className="designation">SOFTWARE</div>
                 <div className="title">Ram Sreevaths</div>
                 <div className="place">Software Developer at Oracle</div>
               </div>
@@ -61,7 +61,7 @@ const Judges = () => {
           <div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.3}}>
               <div className="info">
-                <div className="designation">SOFTWARE</div>
+                <div className="designation">HARDWARE</div>
                 <div className="title">Kumar Nandan</div>
                 <div className="place">SOC Technical Design Lead at Intel</div>
               </div>
@@ -79,7 +79,7 @@ const Judges = () => {
           </div><div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
               <div className="info">
-                <div className="designation">HARDWARE</div>
+                <div className="designation">SOFTWARE</div>
                 <div className="title">Abishake A</div>
                 <div className="place">SMT at D.E. Shaw, India</div>
               </div>
@@ -89,7 +89,7 @@ const Judges = () => {
           <div className="inlineBlock">
             <motion.div className="judge" initial = {{transform : "scale(0.5)"}} viewport={{once : true}} whileInView={{transform : "scale(1)"}} transition={{delay : 0.7}}>
               <div className="info">
-                <div className="designation">HARDWARE</div>
+                <div className="designation">SOFTWARE</div>
                 <div className="title">Subash</div>
                 <div className="place">Analyst at Goldman Sachs</div>
               </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Select, TextInput,BackgroundImage, Text } from "@mantine/core";
 import logo from "../../assets/logo.svg";
-import qr from "../../assets/UPI.jpeg";
+import qr from "../../assets/Akash_UPI.jpeg";
 import bg from "../../assets/bg.png";
 import { showNotification,updateNotification } from '@mantine/notifications';
 import { IconCheck, IconBook2 } from "@tabler/icons-react";
@@ -82,43 +82,53 @@ const Register = () => {
     e.preventDefault();
   
     if (validateForm()) {
-      const formData = new FormData();
-      formData.append("TeamLeaderName", teamLeaderName);
-      formData.append("TeamLeaderRollNo", teamLeaderRollNo);
-      formData.append("ContactNumber", contactNumber);
-      formData.append("Email", email);
-      formData.append("TeamName", teamName);
-      formData.append("Members", JSON.stringify(members));
-      formData.append("Domain", domain);
-      formData.append("PaymentProof", paymentProofLink);
-
-      console.log(formData);
-      const action =
-        "https://script.google.com/macros/s/AKfycbzckIJzHbGiQuUVH1hgDzr28VNuyA7COGSGTFM0YV6xg3ActenbUesTzNOaI45GxYUF/exec";
-      showNotification({
-        id: 'load-data',
-        loading: true,
-        title: 'Registering your team',
-        message: 'This may take few seconds',
-        autoClose: false,
-        disallowClose: true,
-      });
-      fetch(action, {
-        method: "POST",
-        body: formData,
-      }).then(() => {
-        updateNotification({
+      try{
+        const formData = new FormData();
+        formData.append("TeamLeaderName", teamLeaderName);
+        formData.append("TeamLeaderRollNo", teamLeaderRollNo);
+        formData.append("ContactNumber", contactNumber);
+        formData.append("Email", email);
+        formData.append("TeamName", teamName);
+        formData.append("Members", JSON.stringify(members));
+        formData.append("Domain", domain);
+        formData.append("PaymentProof", paymentProofLink);
+  
+        
+        const action =
+          "https://script.google.com/macros/s/AKfycbzckIJzHbGiQuUVH1hgDzr28VNuyA7COGSGTFM0YV6xg3ActenbUesTzNOaI45GxYUF/exec";
+        showNotification({
           id: 'load-data',
-          color: 'teal',
-          title: 'Successfully Registered!',
-          message : "Redirecting to main page in 2s",
-          icon: <IconCheck size={16} />,
-          autoClose: 2000,
+          loading: true,
+          title: 'Registering your team',
+          message: 'This may take few seconds',
+          autoClose: false,
+          disallowClose: true,
         });
-        setTimeout(() => {
-          window.location.href = "/";
-        }, 2000);
-      });
+        fetch(action, {
+          method: "POST",
+          body: formData,
+        }).then(() => {
+          updateNotification({
+            id: 'load-data',
+            color: 'teal',
+            title: 'Successfully Registered!',
+            message : "Redirecting to main page in 2s",
+            icon: <IconCheck size={16} />,
+            autoClose: 2000,
+          });
+          setTimeout(() => {
+            window.location.href = "/";
+          }, 2000);
+        });
+      }
+      catch{
+        showNotification({
+          title: 'Error',
+          message: 'Failed to register your team',
+          autoClose: false,
+          disallowClose: true,
+        });
+      }
     }
   };
 
