@@ -3,6 +3,8 @@ import "./Header.css";
 
 import logo from "../../assets/logo.svg";
 import tclogo from "../../assets/tc.svg";
+import scient from "../../assets/scient.png";
+import nittlogo from "../../assets/nittlogo.png";
 
 import {
   Burger,
@@ -130,7 +132,7 @@ const NavBar = () => {
           })}
         >
           <motion.img
-            src={logo}
+            src={nittlogo}
             id="logo"
             drag
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
@@ -139,7 +141,23 @@ const NavBar = () => {
           ></motion.img>
           <motion.img
             src={tclogo}
+            id="nittlogo"
+            drag
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            dragElastic={1}
+            transition={{ duration: 0.5 }}
+          ></motion.img>
+          <motion.img
+            src={scient}
             id="tclogo"
+            drag
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            dragElastic={1}
+            transition={{ duration: 0.5 }}
+          ></motion.img>
+          <motion.img
+            src={logo}
+            id="scient"
             drag
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
             dragElastic={1}

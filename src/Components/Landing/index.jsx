@@ -107,17 +107,6 @@ const Landing = () => {
                 <div className="timeText">SECONDS</div>
               </div>
             </motion.div>
-            <div className="sponsors">
-              <h3 id="sponsorText">Sponsered and Co-hosted by</h3>
-              <footer>
-                <img id="img1" src={img1}></img>
-                <img id="img2" src={img2}></img>
-                <img id="img3" src={img3}></img>
-                <img id="img4" src={img4}></img>
-                <img id="img5" src={img5}></img>
-                <img id="img6" src={img6}></img>
-              </footer>
-            </div>
           </div>
         </div>
       </BackgroundImage>

@@ -1,16 +1,34 @@
 #logo {
-  height: 48px;
+  height: 70px;
+  margin-bottom: 4px;
+  margin-bottom: -7px;
 }
 #tclogo {
   height: 59px;
   margin-left: 113px;
 }
+#scient {
+  height: 50px;
+  margin-left: 113px;
+}
+#nittlogo {
+  height: 50px;
+  margin-left: 113px;
+}
 @media only screen and (max-width: 600px) {
   #logo {
-    height: 36px;
+    height: 55px;
   }
   #tclogo {
     height: 44px;
-    margin-left: 56px;
+    margin-left: 30px;
+  }
+  #scient {
+    height: 38px;
+    margin-left: 30px;
+  }
+  #nittlogo {
+    height: 45px;
+    margin-left: 30px;
   }
 }
