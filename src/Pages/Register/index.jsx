@@ -167,7 +167,7 @@ const Register = () => {
     <div className="containerreg">
       <h1>Registration Page</h1>
       <motion.button initial = {{scale : 0.5}} animate = {{ scale : 1}} transition={{ delay : 0.3}} className="btnreg" onClick={() => {window.open(
-  'https://drive.google.com/file/d/1ik4B97YNQb4YX0d4pKfb59Was8znyMRT/view?usp=sharing',
+  'https://drive.google.com/file/d/1-ALSr8cgKZOdmo5F-uv2rqwXnv3dH0P4/view?usp=sharing',
   '_blank' // <- This is what makes it open in a new window.
 );}}><IconBook2 /> Rule Book</motion.button>
       <form id="my-form" onSubmit={handleSubmit}>
