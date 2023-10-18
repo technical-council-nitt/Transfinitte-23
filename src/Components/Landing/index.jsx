@@ -12,7 +12,7 @@ const Landing = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const deadline = new Date("October 26, 2023").getTime();
+  const deadline = new Date("October 27, 2023 17:00:00").getTime();
 
   const getTime = () => {
     const currentTime = new Date().getTime();
